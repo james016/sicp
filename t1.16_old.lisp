@@ -1,0 +1,10 @@
+(define (expt b n)
+  (define (expt-iter product counter m a)
+    (cond ((= counter 0) product)
+	  ((= (remainder counter (* 2 m)) 0) (expt-iter product counter (* 2 m) (* a a)))
+	  (else (expt-iter (* product a) (- counter m) (* 2 m) (* a a))))
+    )
+  (expt-iter 1 n 1 b))
+
+(expt 2 10)
+(expt 2 11)

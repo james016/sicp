@@ -1,0 +1,10 @@
+(define (even? n) (= (remainder n 2) 0))
+(define (halve n) (/ n 2))
+(define (* a b)
+  (define (prod-iter c a b)
+    (cond ((= b 0) c)
+	  ((even? b) (prod-iter c (+ a a) (halve b)))
+	  (else (prod-iter (+ c a) a (- b 1)))))
+  (prod-iter 0 a b))
+
+(* 10 10)

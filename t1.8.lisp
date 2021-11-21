@@ -1,0 +1,16 @@
+(define (square x) (* x x))
+(define (cube x) (* x x x))
+(define (cube-root-iter guess x)
+  (if (good-enough? guess (improve guess x))
+    guess
+    (cube-root-iter (improve guess x)
+	       x)))
+(define (improve guess x)
+  (average (/ x (square guess)) guess))
+(define (average x y)
+  (/ (+ x y y) 3))
+(define (good-enough? guess improve_guess)
+  (< (/ (abs (- guess improve_guess)) guess) 0.0001))
+(define (cube-root x) (cube-root-iter 1.0 x))
+
+(cube (cube-root 0.00000000001))
