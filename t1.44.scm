@@ -1,3 +1,4 @@
+#lang racket
 (load "t1.43.scm")
 
 (define dx 0.00001)

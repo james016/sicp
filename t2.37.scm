@@ -1,3 +1,4 @@
+#lang racket
 (load "t2.36.scm")
 
 (define (dot-product v w)

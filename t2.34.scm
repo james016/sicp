@@ -1,3 +1,4 @@
+#lang racket
 (load "t2.33.scm")
 
 (define (horner-eval x coef-seq)

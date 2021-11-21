@@ -1,3 +1,4 @@
+#lang racket
 (define (subsets s)
   (if (null? s)
     (list (list))

@@ -1,3 +1,4 @@
+#lang racket
 (load "t1.30.scm")
 (define (product term a next b)
   (if (> a b)

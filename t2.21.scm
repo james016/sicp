@@ -1,3 +1,4 @@
+#lang racket
 (define (square x) (* x x))
 
 (define (square-list items)

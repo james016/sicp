@@ -1,3 +1,4 @@
+#lang racket
 (define (tree-map func tree)
   (map (lambda (sub-tree)
 	 (if (not (pair? sub-tree))

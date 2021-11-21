@@ -1,3 +1,4 @@
+#lang racket
 (load "t1.35.scm")
 
 (define (fixed-point-for-transform g transform guess)

@@ -1,3 +1,4 @@
+#lang racket
 (load "t1.43.scm")
 (load "t1.40.scm")
 

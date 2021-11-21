@@ -1,3 +1,4 @@
+#lang racket
 (define (same-parity . w)
   (define (iter w)
     (cond ((null? w) `())

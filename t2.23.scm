@@ -1,3 +1,4 @@
+#lang racket
 (define (for-each func items)
   (if (null? items)
     #t

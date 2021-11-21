@@ -1,3 +1,4 @@
+#lang racket
 (load "t2.38.scm")
 
 ; (define (reverse sequence)

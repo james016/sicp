@@ -1,3 +1,4 @@
+#lang racket
 (define (square x) (* x x))
 (define (smallest-divisor n)
   (define (divisor-iter n test-divisor)

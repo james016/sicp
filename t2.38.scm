@@ -1,3 +1,4 @@
+#lang racket
 (define (fold-right op initial sequence)
   (if (null? sequence)
     initial

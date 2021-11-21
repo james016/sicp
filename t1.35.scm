@@ -1,3 +1,4 @@
+#lang racket
 ; (load "t1.6.lisp")
 
 (define tolerance 0.000001)

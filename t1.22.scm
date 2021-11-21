@@ -1,3 +1,4 @@
+#lang racket
 (load "t1.21.scm")
 
 (define (timed-prime-test n)

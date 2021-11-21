@@ -1,3 +1,4 @@
+#lang racket
 (load "t2.40.scm")
 
 (define (accumulate op initial sequence)
