@@ -20,4 +20,3 @@
   (iter a 1))
 
 (product-new indentity 1 inc 4)
-
